@@ -62,7 +62,7 @@ function f = fit_spectrum(v, pf, Const)
     xlabel('Magnetic field offset / mT'); 
     ylabel('Relative Intensity'); 
     xlim([min(x) max(x)]);
-    ylim([-0.1 0.1]);
+    %ylim([-0.1 0.1]);
     legend('reference','sample','fit');
     title('Fitting of dipolar-broadened spectrum');
     
@@ -134,7 +134,7 @@ function f = fit_spectrum(v, pf, Const)
     xlabel('Magnetic field offset / mT'); 
     ylabel('Relative Intensity'); 
     xlim([min(x) max(x)]);
-    ylim([-0.1 0.1]);
+    %ylim([-0.1 0.1]);
     legend('reference','sample','fit');
     title('Fitting of dipolar-broadened spectrum');
     
