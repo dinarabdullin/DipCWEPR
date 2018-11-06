@@ -1,0 +1,30 @@
+
+This MATLAB routine (main.m) simulates the dipolar broadened EPR spectrum as a convolution of the corresponding unbroadened EPR spectrum 
+with a dipolar spectrum. The dipolar spectrum is calculated using a normal distrubution of distances. 
+
+IMPORTANT:
+The program requires an external function called eprload, which is free available and comes with the MATLAB library called EasySpin 
+(easyspin.org)
+
+The input of the program includes:
+1) the experimental dipolar broadened EPR spectrum (e.g., test_data/spectrum.DTA)
+2) the experimental unbroadened (reference) EPR spectrum (e.g., test_data/spectrum_reference.DTA)
+3) the simulation (or optimization) parameters: 
+   - the calculation mode (simulation or fitting)
+   - the dipolar coupling regime (strong or weak)
+   - the mean distance
+   - the standard deviation of the mean distance
+   - the relative weigth of the dipolar broadened component of the experimental EPR spectrum (for the cases, when the 
+     experimental spectum is the superposition of the dipolar broadened and unbroadened EPR spectra)
+   - the number of Monte-Carlo samples (for numerical integration)
+   - the magnetic field increment (for the simulated EPR spectrum)
+   - the micrwave frequency (for the simulated EPR spectrum)
+ 
+ The output in the simulation mode:
+ Left:   The distance distribution
+ Center: The dipolar spectrum calculated for the given distance distrubution and the given coupling regime (only for cw-EPR)
+ Right:  The experimental and simulated dipolar broadened EPR spectra overlaid with the unbroadened EPR spectrum
+ 
+  The output in the fitting mode:
+  1) Same output as in the simulation mode
+  2) RMSD between the experimental and simulated dipolar broadened EPR spectra vs the number of optimization steps
