@@ -25,6 +25,6 @@ The input of the program includes:
  Center: The dipolar spectrum calculated for the given distance distrubution and the given coupling regime (only for cw-EPR)
  Right:  The experimental and simulated dipolar broadened EPR spectra overlaid with the unbroadened EPR spectrum
  
-  The output in the fitting mode:
-  1) Same output as in the simulation mode
-  2) RMSD between the experimental and simulated dipolar broadened EPR spectra vs the number of optimization steps
+ The output in the fitting mode:
+ 1) Same output as in the simulation mode
+ 2) RMSD between the experimental and simulated dipolar broadened EPR spectra vs the number of optimization steps
