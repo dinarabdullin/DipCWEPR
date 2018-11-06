@@ -267,7 +267,7 @@ end
 
 %% Fit the spectrum
 if mode == 1
-    nopt = 2;
+    nopt = 10;
     vopt = zeros([nopt, 3]);
     rmsdopt = zeros([nopt, 1]);
     for i=1:nopt
